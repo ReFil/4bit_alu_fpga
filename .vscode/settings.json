@@ -1,0 +1,8 @@
+{
+    "yowaspToolchain.buildCommands": [
+      ["yosys", "top.v", "cells.v", "-o", "top.json", "-p", "synth_ice40"],
+      ["nextpnr-ice40", "--up5k", "--package", "sg48", "--json", "top.json", "--pcf", "io.pcf", "--asc", "top.asc"],
+      ["icepack", "top.asc", "top.bin"],
+      ["openFPGALoader", "-b", "ice40_generic", "top.bin"]
+    ]
+}
