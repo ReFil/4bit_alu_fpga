@@ -21,7 +21,7 @@
         }
       },
       "cells": {
-        "$specify$663": {
+        "$specify$707": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -9966,7 +9966,7 @@
       "attributes": {
         "hdlname": "top",
         "top": "00000000000000000000000000000001",
-        "src": "top.v:2.1-24.10"
+        "src": "top.v:2.1-22.10"
       },
       "ports": {
         "SW": {
@@ -10011,15 +10011,15 @@
         },
         "P2_2": {
           "direction": "output",
-          "bits": [ "0" ]
+          "bits": [ 15 ]
         },
         "P2_3": {
           "direction": "output",
-          "bits": [ "0" ]
+          "bits": [ 16 ]
         },
         "P2_4": {
           "direction": "output",
-          "bits": [ "0" ]
+          "bits": [ 17 ]
         }
       },
       "cells": {
@@ -10027,7 +10027,107 @@
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000111100000000"
+            "LUT_INIT": "1001100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 10 ],
+            "I1": [ 9 ],
+            "I2": [ 3 ],
+            "I3": [ 2 ],
+            "O": [ 14 ]
+          }
+        },
+        "P2_2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110100101"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "I1": [ 3 ],
+            "I2": [ 18 ],
+            "I3": [ 19 ],
+            "O": [ 15 ]
+          }
+        },
+        "P2_3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 12 ],
+            "I1": [ 7 ],
+            "I2": [ 2 ],
+            "I3": [ 20 ],
+            "O": [ 16 ]
+          }
+        },
+        "P2_4_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0101100101011010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 21 ],
+            "I1": [ 22 ],
+            "I2": [ 23 ],
+            "I3": [ 20 ],
+            "O": [ 17 ]
+          }
+        },
+        "P3_10_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111000000001111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -10043,111 +10143,138 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
+            "I2": [ 11 ],
+            "I3": [ 2 ],
+            "O": [ 18 ]
+          }
+        },
+        "P3_1_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1100001100111100"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 13 ],
+            "I2": [ 6 ],
+            "I3": [ 2 ],
+            "O": [ 21 ]
+          }
+        },
+        "P3_3_SB_LUT4_I0": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1100100010000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "I1": [ 3 ],
+            "I2": [ 18 ],
+            "I3": [ 19 ],
+            "O": [ 20 ]
+          }
+        },
+        "P3_3_SB_LUT4_I0_O_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000001000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 12 ],
+            "I1": [ 7 ],
             "I2": [ 3 ],
             "I3": [ 2 ],
-            "O": [ 14 ]
+            "O": [ 23 ]
+          }
+        },
+        "P3_3_SB_LUT4_I0_O_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001100001100"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 12 ],
+            "I2": [ 7 ],
+            "I3": [ 2 ],
+            "O": [ 22 ]
+          }
+        },
+        "P3_9_SB_LUT4_I1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1100000011110011"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 10 ],
+            "I2": [ 9 ],
+            "I3": [ 2 ],
+            "O": [ 19 ]
           }
         }
       },
       "netnames": {
-        "F0": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "src": "top.v:3.10-3.12"
-          }
-        },
-        "F1": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "src": "top.v:3.14-3.16"
-          }
-        },
-        "OUT0": {
-          "hide_name": 0,
-          "bits": [ 14 ],
-          "attributes": {
-            "src": "top.v:5.10-5.14"
-          }
-        },
-        "OUT1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "src": "top.v:5.16-5.20"
-          }
-        },
-        "OUT2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "src": "top.v:5.22-5.26"
-          }
-        },
-        "OUT3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "src": "top.v:5.28-5.32"
-          }
-        },
-        "P1_1": {
-          "hide_name": 0,
-          "bits": [ "x" ],
-          "attributes": {
-            "src": "top.v:8.17-8.21"
-          }
-        },
-        "P1_10": {
-          "hide_name": 0,
-          "bits": [ "x" ],
-          "attributes": {
-            "src": "top.v:14.17-14.22"
-          }
-        },
-        "P1_11": {
-          "hide_name": 0,
-          "bits": [ "x" ],
-          "attributes": {
-            "src": "top.v:13.17-13.22"
-          }
-        },
-        "P1_12": {
-          "hide_name": 0,
-          "bits": [ "x" ],
-          "attributes": {
-            "src": "top.v:12.17-12.22"
-          }
-        },
-        "P1_2": {
-          "hide_name": 0,
-          "bits": [ "x" ],
-          "attributes": {
-            "src": "top.v:9.17-9.21"
-          }
-        },
-        "P1_3": {
-          "hide_name": 0,
-          "bits": [ "x" ],
-          "attributes": {
-            "src": "top.v:10.17-10.21"
-          }
-        },
-        "P1_4": {
-          "hide_name": 0,
-          "bits": [ "x" ],
-          "attributes": {
-            "src": "top.v:11.17-11.21"
-          }
-        },
-        "P1_9": {
-          "hide_name": 0,
-          "bits": [ "x" ],
-          "attributes": {
-            "src": "top.v:15.17-15.21"
-          }
-        },
         "P2_1": {
           "hide_name": 0,
           "bits": [ 14 ],
@@ -10157,21 +10284,21 @@
         },
         "P2_2": {
           "hide_name": 0,
-          "bits": [ "0" ],
+          "bits": [ 15 ],
           "attributes": {
             "src": "top.v:2.148-2.152"
           }
         },
         "P2_3": {
           "hide_name": 0,
-          "bits": [ "0" ],
+          "bits": [ 16 ],
           "attributes": {
             "src": "top.v:2.161-2.165"
           }
         },
         "P2_4": {
           "hide_name": 0,
-          "bits": [ "0" ],
+          "bits": [ 17 ],
           "attributes": {
             "src": "top.v:2.174-2.178"
           }
@@ -10218,6 +10345,14 @@
             "src": "top.v:2.59-2.63"
           }
         },
+        "P3_3_SB_LUT4_I0_O": {
+          "hide_name": 0,
+          "bits": [ 21, 22, 23, 20 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:6.21-6.22"
+          }
+        },
         "P3_4": {
           "hide_name": 0,
           "bits": [ 9 ],
@@ -10232,6 +10367,14 @@
             "src": "top.v:2.83-2.87"
           }
         },
+        "P3_9_SB_LUT4_I1_O": {
+          "hide_name": 0,
+          "bits": [ 8, 3, 18, 19 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:6.21-6.22"
+          }
+        },
         "SW": {
           "hide_name": 0,
           "bits": [ 2, 3, 4, 5 ],
@@ -10241,1458 +10384,346 @@
         },
         "X0": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 9 ],
           "attributes": {
             "src": "top.v:4.10-4.12"
           }
         },
         "X1": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 8 ],
           "attributes": {
             "src": "top.v:4.14-4.16"
           }
         },
         "X2": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 7 ],
           "attributes": {
             "src": "top.v:4.18-4.20"
           }
         },
         "X3": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 6 ],
           "attributes": {
             "src": "top.v:4.22-4.24"
           }
         },
         "Y0": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 10 ],
           "attributes": {
             "src": "top.v:4.26-4.28"
           }
         },
         "Y1": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 11 ],
           "attributes": {
             "src": "top.v:4.30-4.32"
           }
         },
         "Y2": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 12 ],
           "attributes": {
             "src": "top.v:4.34-4.36"
           }
         },
         "Y3": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 13 ],
           "attributes": {
             "src": "top.v:4.38-4.40"
           }
         },
-        "fba0.F0": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 F0",
-            "src": "top.v:60.107-60.109"
-          }
-        },
-        "fba0.F1": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "hdlname": "fba0 F1",
-            "src": "top.v:60.117-60.119"
-          }
-        },
-        "fba0.OUT0": {
-          "hide_name": 0,
-          "bits": [ 14 ],
-          "attributes": {
-            "hdlname": "fba0 OUT0",
-            "src": "top.v:60.128-60.132"
-          }
-        },
-        "fba0.OUT1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 OUT1",
-            "src": "top.v:60.141-60.145"
-          }
-        },
-        "fba0.OUT2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 OUT2",
-            "src": "top.v:60.154-60.158"
-          }
-        },
-        "fba0.OUT3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 OUT3",
-            "src": "top.v:60.167-60.171"
-          }
-        },
         "fba0.X0": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 9 ],
           "attributes": {
             "hdlname": "fba0 X0",
-            "src": "top.v:60.27-60.29"
+            "src": "top.v:59.27-59.29"
           }
         },
         "fba0.X1": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 8 ],
           "attributes": {
             "hdlname": "fba0 X1",
-            "src": "top.v:60.37-60.39"
+            "src": "top.v:59.37-59.39"
           }
         },
         "fba0.X2": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 7 ],
           "attributes": {
             "hdlname": "fba0 X2",
-            "src": "top.v:60.47-60.49"
+            "src": "top.v:59.47-59.49"
           }
         },
         "fba0.X3": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 6 ],
           "attributes": {
             "hdlname": "fba0 X3",
-            "src": "top.v:60.57-60.59"
-          }
-        },
-        "fba0.XOR0": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 XOR0",
-            "src": "top.v:61.10-61.14"
-          }
-        },
-        "fba0.XOR1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 XOR1",
-            "src": "top.v:62.10-62.14"
-          }
-        },
-        "fba0.XOR2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 XOR2",
-            "src": "top.v:63.10-63.14"
-          }
-        },
-        "fba0.XOR3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 XOR3",
-            "src": "top.v:64.10-64.14"
-          }
-        },
-        "fba0.XY0": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 XY0",
-            "src": "top.v:65.10-65.13"
-          }
-        },
-        "fba0.XY1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 XY1",
-            "src": "top.v:66.10-66.13"
-          }
-        },
-        "fba0.XY2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 XY2",
-            "src": "top.v:67.10-67.13"
-          }
-        },
-        "fba0.XY3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 XY3",
-            "src": "top.v:68.10-68.13"
+            "src": "top.v:59.57-59.59"
           }
         },
         "fba0.Y0": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 10 ],
           "attributes": {
             "hdlname": "fba0 Y0",
-            "src": "top.v:60.67-60.69"
+            "src": "top.v:59.67-59.69"
           }
         },
         "fba0.Y1": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 11 ],
           "attributes": {
             "hdlname": "fba0 Y1",
-            "src": "top.v:60.77-60.79"
+            "src": "top.v:59.77-59.79"
           }
         },
         "fba0.Y2": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 12 ],
           "attributes": {
             "hdlname": "fba0 Y2",
-            "src": "top.v:60.87-60.89"
+            "src": "top.v:59.87-59.89"
           }
         },
         "fba0.Y3": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 13 ],
           "attributes": {
             "hdlname": "fba0 Y3",
-            "src": "top.v:60.97-60.99"
-          }
-        },
-        "fba0.fbax0.F": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 F",
-            "src": "top.v:42.113-42.114"
-          }
-        },
-        "fba0.fbax0.N_1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 N_1",
-            "src": "top.v:43.10-43.13"
-          }
-        },
-        "fba0.fbax0.N_2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 N_2",
-            "src": "top.v:44.10-44.13"
-          }
-        },
-        "fba0.fbax0.N_3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 N_3",
-            "src": "top.v:45.10-45.13"
+            "src": "top.v:59.97-59.99"
           }
         },
         "fba0.fbax0.X0": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 9 ],
           "attributes": {
             "hdlname": "fba0 fbax0 X0",
-            "src": "top.v:42.33-42.35"
+            "src": "top.v:47.33-47.35"
           }
         },
         "fba0.fbax0.X1": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 8 ],
           "attributes": {
             "hdlname": "fba0 fbax0 X1",
-            "src": "top.v:42.43-42.45"
+            "src": "top.v:47.43-47.45"
           }
         },
         "fba0.fbax0.X2": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 7 ],
           "attributes": {
             "hdlname": "fba0 fbax0 X2",
-            "src": "top.v:42.53-42.55"
+            "src": "top.v:47.53-47.55"
           }
         },
         "fba0.fbax0.X3": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 6 ],
           "attributes": {
             "hdlname": "fba0 fbax0 X3",
-            "src": "top.v:42.63-42.65"
-          }
-        },
-        "fba0.fbax0.XOR0": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 XOR0",
-            "src": "top.v:42.123-42.127"
-          }
-        },
-        "fba0.fbax0.XOR1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 XOR1",
-            "src": "top.v:42.136-42.140"
-          }
-        },
-        "fba0.fbax0.XOR2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 XOR2",
-            "src": "top.v:42.149-42.153"
-          }
-        },
-        "fba0.fbax0.XOR3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 XOR3",
-            "src": "top.v:42.162-42.166"
-          }
-        },
-        "fba0.fbax0.XY0": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 XY0",
-            "src": "top.v:42.175-42.178"
-          }
-        },
-        "fba0.fbax0.XY1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 XY1",
-            "src": "top.v:42.187-42.190"
-          }
-        },
-        "fba0.fbax0.XY2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 XY2",
-            "src": "top.v:42.199-42.202"
-          }
-        },
-        "fba0.fbax0.XY3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 XY3",
-            "src": "top.v:42.211-42.214"
+            "src": "top.v:47.63-47.65"
           }
         },
         "fba0.fbax0.Y0": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 10 ],
           "attributes": {
             "hdlname": "fba0 fbax0 Y0",
-            "src": "top.v:42.73-42.75"
+            "src": "top.v:47.73-47.75"
           }
         },
         "fba0.fbax0.Y1": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 11 ],
           "attributes": {
             "hdlname": "fba0 fbax0 Y1",
-            "src": "top.v:42.83-42.85"
+            "src": "top.v:47.83-47.85"
           }
         },
         "fba0.fbax0.Y2": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 12 ],
           "attributes": {
             "hdlname": "fba0 fbax0 Y2",
-            "src": "top.v:42.93-42.95"
+            "src": "top.v:47.93-47.95"
           }
         },
         "fba0.fbax0.Y3": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 13 ],
           "attributes": {
             "hdlname": "fba0 fbax0 Y3",
-            "src": "top.v:42.103-42.105"
-          }
-        },
-        "fba0.fbax0.a0.Cin": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 Cin",
-            "src": "top.v:26.53-26.56"
-          }
-        },
-        "fba0.fbax0.a0.Cout": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 Cout",
-            "src": "top.v:26.87-26.91"
-          }
-        },
-        "fba0.fbax0.a0.N_1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 N_1",
-            "src": "top.v:28.10-28.13"
-          }
-        },
-        "fba0.fbax0.a0.N_2": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 N_2",
-            "src": "top.v:29.10-29.13"
-          }
-        },
-        "fba0.fbax0.a0.N_3": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 N_3",
-            "src": "top.v:30.10-30.13"
-          }
-        },
-        "fba0.fbax0.a0.Sub": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 Sub",
-            "src": "top.v:26.64-26.67"
+            "src": "top.v:47.103-47.105"
           }
         },
         "fba0.fbax0.a0.X": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 9 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a0 X",
-            "src": "top.v:26.35-26.36"
-          }
-        },
-        "fba0.fbax0.a0.XOR": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 XOR",
-            "src": "top.v:26.100-26.103"
-          }
-        },
-        "fba0.fbax0.a0.XY": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 XY",
-            "src": "top.v:26.76-26.78"
+            "src": "top.v:31.35-31.36"
           }
         },
         "fba0.fbax0.a0.Y": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 10 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a0 Y",
-            "src": "top.v:26.44-26.45"
-          }
-        },
-        "fba0.fbax0.a0.nand_1.a": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 nand_1 a",
-            "src": "cells.v:36.16-36.17"
-          }
-        },
-        "fba0.fbax0.a0.nand_1.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 nand_1 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
-        "fba0.fbax0.a0.nand_1.out": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 nand_1 out",
-            "src": "cells.v:38.17-38.20"
+            "src": "top.v:31.44-31.45"
           }
         },
         "fba0.fbax0.a0.nand_2.a": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 9 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a0 nand_2 a",
             "src": "cells.v:36.16-36.17"
           }
         },
-        "fba0.fbax0.a0.nand_2.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 nand_2 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
-        "fba0.fbax0.a0.nand_2.out": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 nand_2 out",
-            "src": "cells.v:38.17-38.20"
-          }
-        },
-        "fba0.fbax0.a0.nand_3.a": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 nand_3 a",
-            "src": "cells.v:36.16-36.17"
-          }
-        },
-        "fba0.fbax0.a0.nand_3.b": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 nand_3 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
-        "fba0.fbax0.a0.nand_3.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 nand_3 out",
-            "src": "cells.v:38.17-38.20"
-          }
-        },
         "fba0.fbax0.a0.xor_1.a": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 10 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a0 xor_1 a",
             "src": "cells.v:27.16-27.17"
           }
         },
-        "fba0.fbax0.a0.xor_1.b": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 xor_1 b",
-            "src": "cells.v:28.16-28.17"
-          }
-        },
-        "fba0.fbax0.a0.xor_1.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 xor_1 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a0.xor_2.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 xor_2 a",
-            "src": "cells.v:27.16-27.17"
-          }
-        },
         "fba0.fbax0.a0.xor_2.b": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 9 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a0 xor_2 b",
             "src": "cells.v:28.16-28.17"
           }
         },
-        "fba0.fbax0.a0.xor_2.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 xor_2 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a0.xor_3.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 xor_3 a",
-            "src": "cells.v:27.16-27.17"
-          }
-        },
-        "fba0.fbax0.a0.xor_3.b": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 xor_3 b",
-            "src": "cells.v:28.16-28.17"
-          }
-        },
-        "fba0.fbax0.a0.xor_3.out": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a0 xor_3 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a1.Cin": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 Cin",
-            "src": "top.v:26.53-26.56"
-          }
-        },
-        "fba0.fbax0.a1.Cout": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 Cout",
-            "src": "top.v:26.87-26.91"
-          }
-        },
-        "fba0.fbax0.a1.N_1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 N_1",
-            "src": "top.v:28.10-28.13"
-          }
-        },
-        "fba0.fbax0.a1.N_2": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 N_2",
-            "src": "top.v:29.10-29.13"
-          }
-        },
-        "fba0.fbax0.a1.N_3": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 N_3",
-            "src": "top.v:30.10-30.13"
-          }
-        },
-        "fba0.fbax0.a1.Sub": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 Sub",
-            "src": "top.v:26.64-26.67"
-          }
-        },
         "fba0.fbax0.a1.X": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 8 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a1 X",
-            "src": "top.v:26.35-26.36"
-          }
-        },
-        "fba0.fbax0.a1.XOR": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 XOR",
-            "src": "top.v:26.100-26.103"
-          }
-        },
-        "fba0.fbax0.a1.XY": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 XY",
-            "src": "top.v:26.76-26.78"
+            "src": "top.v:31.35-31.36"
           }
         },
         "fba0.fbax0.a1.Y": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 11 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a1 Y",
-            "src": "top.v:26.44-26.45"
-          }
-        },
-        "fba0.fbax0.a1.nand_1.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 nand_1 a",
-            "src": "cells.v:36.16-36.17"
-          }
-        },
-        "fba0.fbax0.a1.nand_1.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 nand_1 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
-        "fba0.fbax0.a1.nand_1.out": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 nand_1 out",
-            "src": "cells.v:38.17-38.20"
+            "src": "top.v:31.44-31.45"
           }
         },
         "fba0.fbax0.a1.nand_2.a": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 8 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a1 nand_2 a",
             "src": "cells.v:36.16-36.17"
           }
         },
-        "fba0.fbax0.a1.nand_2.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 nand_2 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
-        "fba0.fbax0.a1.nand_2.out": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 nand_2 out",
-            "src": "cells.v:38.17-38.20"
-          }
-        },
-        "fba0.fbax0.a1.nand_3.a": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 nand_3 a",
-            "src": "cells.v:36.16-36.17"
-          }
-        },
-        "fba0.fbax0.a1.nand_3.b": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 nand_3 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
-        "fba0.fbax0.a1.nand_3.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 nand_3 out",
-            "src": "cells.v:38.17-38.20"
-          }
-        },
         "fba0.fbax0.a1.xor_1.a": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 11 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a1 xor_1 a",
             "src": "cells.v:27.16-27.17"
           }
         },
-        "fba0.fbax0.a1.xor_1.b": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 xor_1 b",
-            "src": "cells.v:28.16-28.17"
-          }
-        },
-        "fba0.fbax0.a1.xor_1.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 xor_1 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a1.xor_2.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 xor_2 a",
-            "src": "cells.v:27.16-27.17"
-          }
-        },
         "fba0.fbax0.a1.xor_2.b": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 8 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a1 xor_2 b",
             "src": "cells.v:28.16-28.17"
           }
         },
-        "fba0.fbax0.a1.xor_2.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 xor_2 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a1.xor_3.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 xor_3 a",
-            "src": "cells.v:27.16-27.17"
-          }
-        },
-        "fba0.fbax0.a1.xor_3.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 xor_3 b",
-            "src": "cells.v:28.16-28.17"
-          }
-        },
-        "fba0.fbax0.a1.xor_3.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a1 xor_3 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a2.Cin": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 Cin",
-            "src": "top.v:26.53-26.56"
-          }
-        },
-        "fba0.fbax0.a2.Cout": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 Cout",
-            "src": "top.v:26.87-26.91"
-          }
-        },
-        "fba0.fbax0.a2.N_1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 N_1",
-            "src": "top.v:28.10-28.13"
-          }
-        },
-        "fba0.fbax0.a2.N_2": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 N_2",
-            "src": "top.v:29.10-29.13"
-          }
-        },
-        "fba0.fbax0.a2.N_3": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 N_3",
-            "src": "top.v:30.10-30.13"
-          }
-        },
-        "fba0.fbax0.a2.Sub": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 Sub",
-            "src": "top.v:26.64-26.67"
-          }
-        },
         "fba0.fbax0.a2.X": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 7 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a2 X",
-            "src": "top.v:26.35-26.36"
-          }
-        },
-        "fba0.fbax0.a2.XOR": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 XOR",
-            "src": "top.v:26.100-26.103"
-          }
-        },
-        "fba0.fbax0.a2.XY": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 XY",
-            "src": "top.v:26.76-26.78"
+            "src": "top.v:31.35-31.36"
           }
         },
         "fba0.fbax0.a2.Y": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 12 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a2 Y",
-            "src": "top.v:26.44-26.45"
-          }
-        },
-        "fba0.fbax0.a2.nand_1.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 nand_1 a",
-            "src": "cells.v:36.16-36.17"
-          }
-        },
-        "fba0.fbax0.a2.nand_1.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 nand_1 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
-        "fba0.fbax0.a2.nand_1.out": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 nand_1 out",
-            "src": "cells.v:38.17-38.20"
+            "src": "top.v:31.44-31.45"
           }
         },
         "fba0.fbax0.a2.nand_2.a": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 7 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a2 nand_2 a",
             "src": "cells.v:36.16-36.17"
           }
         },
-        "fba0.fbax0.a2.nand_2.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 nand_2 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
-        "fba0.fbax0.a2.nand_2.out": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 nand_2 out",
-            "src": "cells.v:38.17-38.20"
-          }
-        },
-        "fba0.fbax0.a2.nand_3.a": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 nand_3 a",
-            "src": "cells.v:36.16-36.17"
-          }
-        },
-        "fba0.fbax0.a2.nand_3.b": {
-          "hide_name": 0,
-          "bits": [ "1" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 nand_3 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
-        "fba0.fbax0.a2.nand_3.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 nand_3 out",
-            "src": "cells.v:38.17-38.20"
-          }
-        },
         "fba0.fbax0.a2.xor_1.a": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 12 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a2 xor_1 a",
             "src": "cells.v:27.16-27.17"
           }
         },
-        "fba0.fbax0.a2.xor_1.b": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 xor_1 b",
-            "src": "cells.v:28.16-28.17"
-          }
-        },
-        "fba0.fbax0.a2.xor_1.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 xor_1 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a2.xor_2.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 xor_2 a",
-            "src": "cells.v:27.16-27.17"
-          }
-        },
         "fba0.fbax0.a2.xor_2.b": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 7 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a2 xor_2 b",
             "src": "cells.v:28.16-28.17"
           }
         },
-        "fba0.fbax0.a2.xor_2.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 xor_2 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a2.xor_3.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 xor_3 a",
-            "src": "cells.v:27.16-27.17"
-          }
-        },
-        "fba0.fbax0.a2.xor_3.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 xor_3 b",
-            "src": "cells.v:28.16-28.17"
-          }
-        },
-        "fba0.fbax0.a2.xor_3.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a2 xor_3 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a3.Cin": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 Cin",
-            "src": "top.v:26.53-26.56"
-          }
-        },
-        "fba0.fbax0.a3.N_1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 N_1",
-            "src": "top.v:28.10-28.13"
-          }
-        },
-        "fba0.fbax0.a3.Sub": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 Sub",
-            "src": "top.v:26.64-26.67"
-          }
-        },
         "fba0.fbax0.a3.X": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 6 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a3 X",
-            "src": "top.v:26.35-26.36"
-          }
-        },
-        "fba0.fbax0.a3.XOR": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 XOR",
-            "src": "top.v:26.100-26.103"
-          }
-        },
-        "fba0.fbax0.a3.XY": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 XY",
-            "src": "top.v:26.76-26.78"
+            "src": "top.v:31.35-31.36"
           }
         },
         "fba0.fbax0.a3.Y": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 13 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a3 Y",
-            "src": "top.v:26.44-26.45"
-          }
-        },
-        "fba0.fbax0.a3.nand_1.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 nand_1 a",
-            "src": "cells.v:36.16-36.17"
-          }
-        },
-        "fba0.fbax0.a3.nand_1.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 nand_1 b",
-            "src": "cells.v:37.16-37.17"
+            "src": "top.v:31.44-31.45"
           }
         },
         "fba0.fbax0.a3.nand_2.a": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 6 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a3 nand_2 a",
             "src": "cells.v:36.16-36.17"
           }
         },
-        "fba0.fbax0.a3.nand_2.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 nand_2 b",
-            "src": "cells.v:37.16-37.17"
-          }
-        },
         "fba0.fbax0.a3.xor_1.a": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 13 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a3 xor_1 a",
             "src": "cells.v:27.16-27.17"
           }
         },
-        "fba0.fbax0.a3.xor_1.b": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 xor_1 b",
-            "src": "cells.v:28.16-28.17"
-          }
-        },
-        "fba0.fbax0.a3.xor_1.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 xor_1 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a3.xor_2.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 xor_2 a",
-            "src": "cells.v:27.16-27.17"
-          }
-        },
         "fba0.fbax0.a3.xor_2.b": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 6 ],
           "attributes": {
             "hdlname": "fba0 fbax0 a3 xor_2 b",
             "src": "cells.v:28.16-28.17"
-          }
-        },
-        "fba0.fbax0.a3.xor_2.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 xor_2 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbax0.a3.xor_3.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 xor_3 a",
-            "src": "cells.v:27.16-27.17"
-          }
-        },
-        "fba0.fbax0.a3.xor_3.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 xor_3 b",
-            "src": "cells.v:28.16-28.17"
-          }
-        },
-        "fba0.fbax0.a3.xor_3.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbax0 a3 xor_3 out",
-            "src": "cells.v:29.17-29.20"
-          }
-        },
-        "fba0.fbm0.MUX": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 MUX",
-            "src": "top.v:53.115-53.118"
-          }
-        },
-        "fba0.fbm0.OUT0": {
-          "hide_name": 0,
-          "bits": [ 14 ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 OUT0",
-            "src": "top.v:53.127-53.131"
-          }
-        },
-        "fba0.fbm0.OUT1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 OUT1",
-            "src": "top.v:53.140-53.144"
-          }
-        },
-        "fba0.fbm0.OUT2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 OUT2",
-            "src": "top.v:53.153-53.157"
-          }
-        },
-        "fba0.fbm0.OUT3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 OUT3",
-            "src": "top.v:53.166-53.170"
-          }
-        },
-        "fba0.fbm0.X0": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 X0",
-            "src": "top.v:53.35-53.37"
-          }
-        },
-        "fba0.fbm0.X1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 X1",
-            "src": "top.v:53.45-53.47"
-          }
-        },
-        "fba0.fbm0.X2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 X2",
-            "src": "top.v:53.55-53.57"
-          }
-        },
-        "fba0.fbm0.X3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 X3",
-            "src": "top.v:53.65-53.67"
-          }
-        },
-        "fba0.fbm0.Y0": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 Y0",
-            "src": "top.v:53.75-53.77"
-          }
-        },
-        "fba0.fbm0.Y1": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 Y1",
-            "src": "top.v:53.85-53.87"
-          }
-        },
-        "fba0.fbm0.Y2": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 Y2",
-            "src": "top.v:53.95-53.97"
-          }
-        },
-        "fba0.fbm0.Y3": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 Y3",
-            "src": "top.v:53.105-53.107"
-          }
-        },
-        "fba0.fbm0.m0.a": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m0 a",
-            "src": "cells.v:53.16-53.17"
-          }
-        },
-        "fba0.fbm0.m0.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m0 b",
-            "src": "cells.v:54.16-54.17"
-          }
-        },
-        "fba0.fbm0.m0.out": {
-          "hide_name": 0,
-          "bits": [ 14 ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m0 out",
-            "src": "cells.v:56.17-56.20"
-          }
-        },
-        "fba0.fbm0.m0.sel": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m0 sel",
-            "src": "cells.v:55.16-55.19"
-          }
-        },
-        "fba0.fbm0.m1.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m1 a",
-            "src": "cells.v:53.16-53.17"
-          }
-        },
-        "fba0.fbm0.m1.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m1 b",
-            "src": "cells.v:54.16-54.17"
-          }
-        },
-        "fba0.fbm0.m1.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m1 out",
-            "src": "cells.v:56.17-56.20"
-          }
-        },
-        "fba0.fbm0.m1.sel": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m1 sel",
-            "src": "cells.v:55.16-55.19"
-          }
-        },
-        "fba0.fbm0.m2.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m2 a",
-            "src": "cells.v:53.16-53.17"
-          }
-        },
-        "fba0.fbm0.m2.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m2 b",
-            "src": "cells.v:54.16-54.17"
-          }
-        },
-        "fba0.fbm0.m2.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m2 out",
-            "src": "cells.v:56.17-56.20"
-          }
-        },
-        "fba0.fbm0.m2.sel": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m2 sel",
-            "src": "cells.v:55.16-55.19"
-          }
-        },
-        "fba0.fbm0.m3.a": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m3 a",
-            "src": "cells.v:53.16-53.17"
-          }
-        },
-        "fba0.fbm0.m3.b": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m3 b",
-            "src": "cells.v:54.16-54.17"
-          }
-        },
-        "fba0.fbm0.m3.out": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m3 out",
-            "src": "cells.v:56.17-56.20"
-          }
-        },
-        "fba0.fbm0.m3.sel": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "hdlname": "fba0 fbm0 m3 sel",
-            "src": "cells.v:55.16-55.19"
           }
         }
       }
