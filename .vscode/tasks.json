@@ -1,0 +1,36 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "YoSys Build",
+            "type": "shell",
+            "command": "yosys top.v cells.v alu.v sync.v -o top.json -p synth_ice40",
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "Nextpnr & Icepack",
+            "type": "shell",
+            "command": "nextpnr-ice40 --up5k --package sg48 --json top.json --pcf io.pcf --asc top.asc && icepack top.asc top.bin",
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash",
+            "type": "shell",
+            "command": "./icesprog top.bin",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build & Flash",
+            "type": "shell",
+            "command": "yosys top.v cells.v alu.v sync.v -o top.json -p synth_ice40 && nextpnr-ice40 --up5k --package sg48 --json top.json --pcf io.pcf --asc top.asc && icepack top.asc top.bin && ./icesprog top.bin",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
